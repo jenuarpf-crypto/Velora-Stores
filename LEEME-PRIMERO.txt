@@ -1,0 +1,17 @@
+VELORA V8 — SOLO ACTUALIZACIÓN
+
+ESTA es la versión corregida. NO uses la V7 anterior.
+
+En GitHub:
+1) Reemplaza public/index.html
+2) Reemplaza public/home-v5.css
+3) En public/assets/ AGREGA todos los archivos que empiezan por v8-
+
+NO borres ni reemplaces:
+- app.js
+- server.js
+- data/
+- variables de Render
+- llaves de Wompi
+
+Después haz Commit changes. Render hará el despliegue automático.
