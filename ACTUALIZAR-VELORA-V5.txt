@@ -1,0 +1,74 @@
+VELORA V5 — ACTUALIZACIÓN PREMIUM HOMBRE
+========================================
+
+QUÉ CAMBIA
+----------
+- Interfaz nueva inspirada en la muestra premium aprobada.
+- Solo modelos masculinos.
+- Hero principal: camiseta + jogger.
+- Cada modelo del carrusel usa un color diferente.
+- 5 marcas: Puma, Nike, Adidas, Reebok y Under Armour.
+- Hasta 10 colores por referencia.
+- 1 camiseta: $65.000
+- 2 camisetas: $110.000
+- 3 camisetas: $160.000
+- Envío gratis.
+- Pago online con Wompi.
+- Pago contra entrega funcional.
+- Opiniones/comentarios con moderación desde admin.html.
+- Políticas de envío y términos actualizadas para contra entrega.
+
+CÓMO ACTUALIZAR EN GITHUB
+-------------------------
+1. NO borres tu repositorio actual.
+2. NO reemplaces la carpeta data. Así conservas pedidos, reseñas e inventario actual.
+3. En GitHub reemplaza el archivo server.js por el server.js de esta actualización.
+4. Dentro de public/ reemplaza:
+   - index.html
+   - app.js
+   - resultado.js
+   - envios.html
+   - terminos.html
+5. Dentro de public/ agrega el archivo nuevo:
+   - home-v5.css
+6. Dentro de public/assets/ sube:
+   - hero-modelo-negro.png
+   - modelo-negro.png
+   - modelo-blanco.png
+   - modelo-gris.png
+   - modelo-azul-marino.png
+   - modelo-verde-oliva.png
+   - modelo-beige.png
+   - modelo-vinotinto.png
+   - modelo-azul-rey.png
+   - modelo-cafe.png
+   - modelo-gris-oscuro.png
+7. Pulsa Commit changes.
+8. Render detectará el cambio y desplegará automáticamente.
+9. Espera hasta que Render muestre Live.
+10. Abre tu misma URL: https://velora-store-pp8v.onrender.com/
+
+NO TOQUES EN RENDER
+-------------------
+Tus variables BASE_URL, Wompi, WhatsApp, correo y ADMIN_TOKEN permanecen configuradas.
+No necesitas volver a escribir las llaves de Wompi.
+
+CONTRA ENTREGA
+--------------
+En el checkout ahora aparecen dos métodos:
+- Pago online con Wompi
+- Pago contra entrega
+
+Un pedido contra entrega queda registrado con estado COD_PENDING / COD_CONFIRMED y se puede consultar desde el panel de administración.
+
+ENVÍO GRATIS
+------------
+Esta versión calcula el envío en $0 para todos los pedidos. Si más adelante quieres cobrar envío en algunas zonas, conviene cambiar la lógica antes de publicar esa condición.
+
+IMPORTANTE SOBRE LAS FOTOS
+--------------------------
+Las nuevas fotos con modelos son imágenes de styling generadas para dar la apariencia visual aprobada. Para comercialización final, reemplaza las imágenes que no representen exactamente la referencia real por fotografías propias o autorizadas del producto real que vendes.
+
+SEGURIDAD
+---------
+No subas a GitHub tu archivo .env ni llaves privadas de Wompi. Las llaves deben seguir únicamente en Environment Variables de Render.
