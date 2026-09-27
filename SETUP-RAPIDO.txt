@@ -1,0 +1,16 @@
+VELORA — PUESTA EN MARCHA
+
+1) Copia .env.example como .env
+2) Pon BASE_URL=https://tu-dominio.com
+3) Agrega tus datos y tus 4 credenciales de Wompi
+4) Sube la carpeta a un hosting Node 20 (o usa el Dockerfile)
+5) En Wompi registra: https://tu-dominio.com/api/webhooks/wompi
+6) Prueba en Sandbox
+7) Completa public/politicas.html
+8) Reemplaza los mockups por fotos reales del inventario
+9) Pasa Wompi a llaves de producción
+
+Inicio local: node server.js
+Tienda: /index.html
+Panel: /admin.html
+Webhook: /api/webhooks/wompi
