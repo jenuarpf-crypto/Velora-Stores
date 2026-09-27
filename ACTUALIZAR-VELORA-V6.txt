@@ -1,0 +1,18 @@
+VELORA V6 - ACTUALIZACIÓN
+
+Esta actualización mantiene la base de la V5 y corrige lo que pediste:
+- 6 miniaturas laterales
+- modelos solo hombres
+- varios pantalones diferentes (no conjuntos)
+- mezcla de marcas en la fila inferior
+- diseño premium muy parecido a la V5
+
+ARCHIVOS A REEMPLAZAR EN GITHUB:
+1. public/index.html
+2. public/home-v5.css
+
+NO reemplaces la carpeta data.
+NO necesitas volver a configurar Wompi.
+
+Después de subir los archivos, haz Commit changes.
+Render actualizará la tienda automáticamente.
