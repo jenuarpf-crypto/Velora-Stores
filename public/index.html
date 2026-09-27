@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VELORA | Camisetas premium</title>
+  <meta name="description" content="Camisetas seleccionadas por VELORA. Elige color, talla y combo; paga de forma segura con Wompi.">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="VELORA | Camisetas premium">
+  <meta property="og:description" content="Elige color, talla y combo. Pago seguro con Wompi.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="topbar">Envíos nacionales · Pago seguro · Cambios sujetos a políticas</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="VELORA inicio">VELORA<span>®</span></a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#producto">Producto</a>
+      <a href="#combos">Combos</a>
+      <a href="#detalles">Detalles</a>
+      <a href="/politicas.html">Políticas</a>
+    </nav>
+    <a class="header-cta" href="#comprar">Comprar</a>
+  </header>
+
+  <main>
+    <section class="hero" id="producto">
+      <div class="gallery-card">
+        <div class="badge">Selección VELORA</div>
+        <img id="heroImage" class="hero-image" src="/assets/puma-negra.png" alt="Camiseta Puma color negro">
+        <div class="thumb-row" id="thumbRow" aria-label="Colores"></div>
+      </div>
+
+      <div class="product-panel" id="comprar">
+        <div class="eyebrow">PUMA · REVENTA SELECCIONADA</div>
+        <h1>Camiseta Puma<br><span>Logo Pecho</span></h1>
+        <div class="rating-line"><span class="status-dot"></span> Disponible según inventario</div>
+        <p class="lead">Una camiseta limpia, versátil y fácil de combinar. Escoge tu color, talla y el combo que más te convenga.</p>
+
+        <div class="price-box">
+          <div><span class="from">Desde</span><strong id="unitPrice">$53.333</strong><small> por unidad en combo de 3</small></div>
+          <div class="pay-note">Total del combo se confirma antes del pago</div>
+        </div>
+
+        <div class="selector-block">
+          <div class="selector-head"><span>Color</span><strong id="selectedColorName">Negro</strong></div>
+          <div class="swatches" id="swatches"></div>
+        </div>
+
+        <div class="selector-block" id="combos">
+          <div class="selector-head"><span>Elige tu combo</span><span class="mini">Mejor precio por unidad</span></div>
+          <div class="packs" id="packCards"></div>
+        </div>
+
+        <div class="items-config" id="itemsConfig"></div>
+
+        <div class="checkout-card">
+          <h2>Datos de envío</h2>
+          <form id="checkoutForm" novalidate>
+            <div class="grid-2">
+              <label>Nombre completo<input name="fullName" autocomplete="name" required></label>
+              <label>Correo<input name="email" type="email" autocomplete="email" required></label>
+              <label>Celular<input name="phone" autocomplete="tel" inputmode="tel" required></label>
+              <label>Documento <span class="optional">(opcional)</span><input name="document" inputmode="numeric"></label>
+              <label class="span-2">Dirección<input name="address" autocomplete="street-address" required></label>
+              <label>Ciudad<input name="city" autocomplete="address-level2" required></label>
+              <label>Departamento<input name="department" autocomplete="address-level1"></label>
+              <label class="span-2">Indicaciones <span class="optional">(opcional)</span><textarea name="notes" rows="2" placeholder="Torre, apartamento, referencias..."></textarea></label>
+            </div>
+
+            <div class="order-summary">
+              <div><span>Productos</span><strong id="summarySubtotal">$65.000</strong></div>
+              <div><span>Envío</span><strong id="summaryShipping">$0</strong></div>
+              <div class="total"><span>Total</span><strong id="summaryTotal">$65.000</strong></div>
+            </div>
+
+            <button class="buy-button" id="buyButton" type="submit">
+              <span>Ir al pago seguro</span>
+              <span aria-hidden="true">→</span>
+            </button>
+            <p class="secure-note">🔒 El pago se realiza en el checkout seguro de Wompi. VELORA no almacena los datos de tu tarjeta.</p>
+            <div id="checkoutMessage" class="message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Beneficios de compra">
+      <article><span class="icon">01</span><div><h3>Pago protegido</h3><p>Redirección a la pasarela de pago para completar la transacción.</p></div></article>
+      <article><span class="icon">02</span><div><h3>Selección por talla</h3><p>Cada unidad del combo puede llevar color y talla distintos.</p></div></article>
+      <article><span class="icon">03</span><div><h3>Seguimiento del pedido</h3><p>Referencia única para confirmar el estado de cada compra.</p></div></article>
+    </section>
+
+    <section class="detail-section" id="detalles">
+      <div class="detail-copy">
+        <div class="eyebrow">EL PRODUCTO</div>
+        <h2>Minimalista por fuera.<br>Listo para el día a día.</h2>
+        <p>Presentación de catálogo con logo pequeño en el pecho, cuello redondo y variedad de colores. La talla y disponibilidad final dependen del inventario cargado por la tienda.</p>
+        <ul class="feature-list">
+          <li>10 colores disponibles en el catálogo</li>
+          <li>Tallas S, M, L y XL</li>
+          <li>Combo de 1, 2 o 3 unidades</li>
+          <li>Pago externo mediante Wompi</li>
+        </ul>
+      </div>
+      <div class="mosaic">
+        <img src="/assets/puma-beige.png" alt="Camiseta beige">
+        <img src="/assets/puma-azul-marino.png" alt="Camiseta azul marino">
+        <img src="/assets/puma-vinotinto.png" alt="Camiseta vinotinto">
+        <img src="/assets/puma-celeste.png" alt="Camiseta celeste">
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="eyebrow">ANTES DE COMPRAR</div>
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Puedo pedir colores distintos en el combo?</summary><p>Sí. Al elegir combo de 2 o 3 se habilita un selector independiente de color y talla para cada unidad.</p></details>
+      <details><summary>¿Cómo se realiza el pago?</summary><p>Al confirmar tus datos, el sitio prepara la orden y te dirige al checkout de Wompi. Los métodos disponibles dependen de tu cuenta de comercio en Wompi.</p></details>
+      <details><summary>¿Qué pasa después de pagar?</summary><p>La tienda recibe el estado de la transacción mediante un webhook y actualiza tu pedido. La página de resultado consulta ese estado desde el servidor de VELORA.</p></details>
+      <details><summary>¿Puedo cambiar una talla?</summary><p>Las condiciones de cambios, devoluciones y retracto deben publicarse en la sección de políticas antes de abrir la tienda al público.</p></details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><a class="brand footer-brand" href="/">VELORA<span>®</span></a><p>Comercio independiente de reventa.</p></div>
+    <div><h4>Ayuda</h4><a href="/politicas.html">Políticas</a><a id="waLink" href="#">WhatsApp</a><a id="emailLink" href="#">Correo</a></div>
+    <div><h4>Información</h4><p id="storeCity">Colombia</p><p>Las marcas y logotipos pertenecen a sus respectivos titulares. VELORA no se presenta como tienda oficial de las marcas revendidas.</p></div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
